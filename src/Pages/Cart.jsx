@@ -1,10 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import Title from '../components/Title';
-import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const { products, cartItems, getCartAmount, updateQuantity, addOrder } = useContext(ShopContext);
+  const { products, cartItems, updateQuantity, addOrder } = useContext(ShopContext);
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {

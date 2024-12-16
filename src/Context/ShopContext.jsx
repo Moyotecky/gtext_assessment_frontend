@@ -119,6 +119,7 @@ const addToCart = async (itemId, quantity) => {
     let totalAmount = 0;
     for (const item in cartItems) {
       // Assuming `products` is fetched from the backend or available globally
+      // eslint-disable-next-line no-undef
       const productInfo = products.find((product) => product._id === item);
       if (productInfo) {
         totalAmount += productInfo.price * cartItems[item];
