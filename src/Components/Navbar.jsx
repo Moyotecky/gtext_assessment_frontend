@@ -33,12 +33,12 @@ const Navbar = () => {
           alt=""
           className="w-5 cursor-pointer " />
         <div className="group relative">
-          <Link to="/login">
+          {/* <Link to="/login">
             <img
               src={assets.profile_icon}
               alt=""
               className="w-5 cursor-pointer" />
-          </Link>
+          </Link> */}
 
         </div>
       </div>
